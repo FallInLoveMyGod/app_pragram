@@ -18,6 +18,14 @@
     return NO;
 }
 
+// 本地json 转换成字典
++ (NSDictionary *)dicFromLocalJsonWithFileName:(NSString *)fileName {
+    NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
+    NSString *jsonString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    return [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:nil];
+}
+
 //  电话号码是否合法
 + (BOOL)xfunc_isValidMobileNumber:(NSString *)mobileNum {
     if (mobileNum.length != 11) {

@@ -22,6 +22,11 @@
 #import "ConfigMacros.h"                //  配置
 #import "APIStringMacros.h"             //  API
 
+#import "NSObject+Model.h"
+#import "UIColor+HexString.h"
+#import "NSMutableArray+NilObject.h"
+#import "NSMutableDictionary+NilObject.h"
+
 #import "Masonry.h"
 #import <AFNetworking.h>
 #import "UIImageView+WebCache.h"

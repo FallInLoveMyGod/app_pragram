@@ -29,6 +29,7 @@
     return YES;
 }
 
+// 引导页
 - (void)showGuidePage {
     NSString *lastVersion = [[NSUserDefaults standardUserDefaults] valueForKey:APP_VERSION];
     NSString *newVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];

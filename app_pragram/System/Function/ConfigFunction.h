@@ -14,6 +14,8 @@
 
 + (BOOL)xfunc_emptyWithString:(NSString *)string;
 
++ (NSDictionary *)dicFromLocalJsonWithFileName:(NSString *)fileName;
+
 + (BOOL)xfunc_isValidMobileNumber:(NSString *)mobileNum;
 
 + (AppDelegate *)xfunc_getAppDelegate;
