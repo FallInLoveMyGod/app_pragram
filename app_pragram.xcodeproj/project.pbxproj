@@ -31,6 +31,11 @@
 		FE1541C41FD4F0340053C6F9 /* ConfigFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1541BF1FD4F0340053C6F9 /* ConfigFunction.m */; };
 		FE1541C51FD4F0340053C6F9 /* RequestFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1541C01FD4F0340053C6F9 /* RequestFunction.m */; };
 		FE18FE911FF644F400528289 /* MyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FE18FE8F1FF644F400528289 /* MyTabBar.m */; };
+		FE55D2E21FFF1895006BA54C /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE55D2DC1FFF1895006BA54C /* CollectionViewCell.m */; };
+		FE55D2E31FFF1895006BA54C /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE55D2DD1FFF1895006BA54C /* CollectionViewCell.xib */; };
+		FE55D2E41FFF1895006BA54C /* CustotNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE55D2DF1FFF1895006BA54C /* CustotNavView.m */; };
+		FE55D2E81FFF2461006BA54C /* HeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE55D2E61FFF2461006BA54C /* HeaderReusableView.m */; };
+		FE55D2E91FFF2461006BA54C /* HeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE55D2E71FFF2461006BA54C /* HeaderReusableView.xib */; };
 		FEFB77491FF23175006C20DF /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFB77481FF23174006C20DF /* NSObject+Model.m */; };
 		FEFB774F1FF24C8A006C20DF /* NSMutableArray+NilObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFB774E1FF24C8A006C20DF /* NSMutableArray+NilObject.m */; };
 		FEFB77521FF24D1B006C20DF /* NSMutableDictionary+NilObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFB77511FF24D1B006C20DF /* NSMutableDictionary+NilObject.m */; };
@@ -91,6 +96,14 @@
 		FE1541C21FD4F0340053C6F9 /* SystemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemManager.h; sourceTree = "<group>"; };
 		FE18FE8F1FF644F400528289 /* MyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBar.m; sourceTree = "<group>"; };
 		FE18FE901FF644F400528289 /* MyTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBar.h; sourceTree = "<group>"; };
+		FE55D2DB1FFF1895006BA54C /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		FE55D2DC1FFF1895006BA54C /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		FE55D2DD1FFF1895006BA54C /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		FE55D2DE1FFF1895006BA54C /* CustotNavView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustotNavView.h; sourceTree = "<group>"; };
+		FE55D2DF1FFF1895006BA54C /* CustotNavView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustotNavView.m; sourceTree = "<group>"; };
+		FE55D2E51FFF2461006BA54C /* HeaderReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderReusableView.h; sourceTree = "<group>"; };
+		FE55D2E61FFF2461006BA54C /* HeaderReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderReusableView.m; sourceTree = "<group>"; };
+		FE55D2E71FFF2461006BA54C /* HeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderReusableView.xib; sourceTree = "<group>"; };
 		FEFB77471FF23174006C20DF /* NSObject+Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Model.h"; sourceTree = "<group>"; };
 		FEFB77481FF23174006C20DF /* NSObject+Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Model.m"; sourceTree = "<group>"; };
 		FEFB774D1FF24C8A006C20DF /* NSMutableArray+NilObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+NilObject.h"; sourceTree = "<group>"; };
@@ -229,6 +242,9 @@
 		FE01E3F81FD1484400BA1299 /* Communty */ = {
 			isa = PBXGroup;
 			children = (
+				FE55D2E01FFF1895006BA54C /* Controller */,
+				FE55D2E11FFF1895006BA54C /* Model */,
+				FE55D2DA1FFF1895006BA54C /* View */,
 				FE01E3F91FD1484400BA1299 /* ACommunityVC.h */,
 				FE01E3FA1FD1484400BA1299 /* ACommunityVC.m */,
 			);
@@ -345,6 +361,35 @@
 			path = MyTabBar;
 			sourceTree = "<group>";
 		};
+		FE55D2DA1FFF1895006BA54C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE55D2DB1FFF1895006BA54C /* CollectionViewCell.h */,
+				FE55D2DC1FFF1895006BA54C /* CollectionViewCell.m */,
+				FE55D2DD1FFF1895006BA54C /* CollectionViewCell.xib */,
+				FE55D2DE1FFF1895006BA54C /* CustotNavView.h */,
+				FE55D2DF1FFF1895006BA54C /* CustotNavView.m */,
+				FE55D2E51FFF2461006BA54C /* HeaderReusableView.h */,
+				FE55D2E61FFF2461006BA54C /* HeaderReusableView.m */,
+				FE55D2E71FFF2461006BA54C /* HeaderReusableView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE55D2E01FFF1895006BA54C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE55D2E11FFF1895006BA54C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -408,6 +453,8 @@
 			files = (
 				FE01E3DD1FD1475D00BA1299 /* LaunchScreen.storyboard in Resources */,
 				FE01E3DA1FD1475D00BA1299 /* Assets.xcassets in Resources */,
+				FE55D2E91FFF2461006BA54C /* HeaderReusableView.xib in Resources */,
+				FE55D2E31FFF1895006BA54C /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,14 +525,17 @@
 				FE01E42E1FD1484500BA1299 /* RootVC.m in Sources */,
 				FE01E42B1FD1484500BA1299 /* UIColor+HexString.m in Sources */,
 				FE01E42C1FD1484500BA1299 /* AllVC.m in Sources */,
+				FE55D2E41FFF1895006BA54C /* CustotNavView.m in Sources */,
 				FE01E4231FD1484500BA1299 /* GGBannerCollectionViewCell.m in Sources */,
 				FE1541C41FD4F0340053C6F9 /* ConfigFunction.m in Sources */,
 				FE01E4291FD1484500BA1299 /* PersonalCenterVC.m in Sources */,
 				FE18FE911FF644F400528289 /* MyTabBar.m in Sources */,
+				FE55D2E81FFF2461006BA54C /* HeaderReusableView.m in Sources */,
 				FE01E4211FD1484500BA1299 /* ACommunityVC.m in Sources */,
 				FEFB77521FF24D1B006C20DF /* NSMutableDictionary+NilObject.m in Sources */,
 				FE1541BB1FD4EEE00053C6F9 /* LoadVC.m in Sources */,
 				FEFB77491FF23175006C20DF /* NSObject+Model.m in Sources */,
+				FE55D2E21FFF1895006BA54C /* CollectionViewCell.m in Sources */,
 				FE01E4281FD1484500BA1299 /* TestPageController.m in Sources */,
 				FE01E4261FD1484500BA1299 /* FirstController.m in Sources */,
 				FE1541C31FD4F0340053C6F9 /* SystemManager.m in Sources */,

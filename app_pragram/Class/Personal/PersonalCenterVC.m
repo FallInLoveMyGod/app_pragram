@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view addSubview:self.mytable];
     // Do any additional setup after loading the view.
 }
 

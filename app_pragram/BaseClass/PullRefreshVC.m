@@ -25,13 +25,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.mytable];
+//    [self.view addSubview:self.mytable];
 }
 
 #pragma mark - UI
 - (UITableView *)mytable {
     if (!_mytable) {
-        _mytable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, App_Width, App_Height - 64 - 49) style:UITableViewStyleGrouped];
+        _mytable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, App_Width, App_Height - App_StatusBarH - App_NavBarH - App_TabBarH) style:UITableViewStyleGrouped];
         _mytable.delegate = self;
         _mytable.dataSource = self;
         _mytable.showsVerticalScrollIndicator = NO;
