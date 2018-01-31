@@ -28,6 +28,28 @@
 //    [self.view addSubview:self.mytable];
 }
 
+-(void)registerCellWithNib:(NSString *)nibName tableView:(UITableView *)tableView{
+    [tableView registerNib:[UINib nibWithNibName:nibName bundle:nil] forCellReuseIdentifier:nibName];
+}
+
+-(void)registerCellWithClass:(NSString *)className tableView:(UITableView *)tableView{
+    [tableView registerClass:NSClassFromString(className) forCellReuseIdentifier:className];
+}
+
+//设置状态栏颜色
+- (void)setStatusBarBackgroundColor:(UIColor *)color {
+    
+    UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+    if ([statusBar respondsToSelector:@selector(setBackgroundColor:)]) {
+        statusBar.backgroundColor = color;
+    }
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
+
 #pragma mark - UI
 - (UITableView *)mytable {
     if (!_mytable) {
@@ -43,6 +65,13 @@
         [_mytable addSubview:self.refreshHeaderView];
     }
     return _mytable;
+}
+
+- (NSMutableArray *)myDataSource {
+    if (!_myDataSource) {
+        _myDataSource = [NSMutableArray array];
+    }
+    return _myDataSource;
 }
 
 - (UIView *)refreshHeaderView {
@@ -71,15 +100,15 @@
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return self.myDataSource.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    return [UITableViewCell new];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {

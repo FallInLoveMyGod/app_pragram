@@ -19,11 +19,22 @@
 }
 
 // 本地json 转换成字典
-+ (NSDictionary *)dicFromLocalJsonWithFileName:(NSString *)fileName {
++ (NSDictionary *)xfunc_dicFromLocalJsonWithFileName:(NSString *)fileName {
     NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
     NSString *jsonString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
     return [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableLeaves error:nil];
+}
+
+// 字典转化成json
++ (NSString *)xfunc_dictionaryToJSONString:(NSDictionary *)dictionary
+{
+    NSError *error = nil;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictionary options:NSJSONWritingPrettyPrinted error:&error];
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    NSString *jsonTemp = [jsonString stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    NSString *jsonResult = [jsonTemp stringByReplacingOccurrencesOfString:@" " withString:@""];
+    return jsonResult;
 }
 
 //  电话号码是否合法
@@ -92,6 +103,38 @@
     }
     return miniteStr;
 }
+
++ (NSDate *)xfunc_dateFromtimeStrap:(NSInteger)timeStrap {
+//    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    //只显示时间
+    //    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    //只显示日期
+    //    [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+    NSDate *datt = [NSDate dateWithTimeIntervalSince1970:timeStrap];
+    return datt;
+}
+
++ (NSInteger)xfunc_weekdayFromDate:(NSDate *)date {
+    //    NSArray *weekdays =
+    //    [NSArray arrayWithObjects:
+    //     [NSNull null], @"周日", @"周一", @"周二", @"周三", @"周四", @"周五", @"周六", nil];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSTimeZone *timeZone = [[NSTimeZone alloc] initWithName:@"Asia/Shanghai"];
+    [calendar setTimeZone:timeZone];
+    NSCalendarUnit calendatUnit = NSCalendarUnitWeekday;
+    NSDateComponents *theCom = [calendar components:calendatUnit fromDate:date];
+    //    return [weekdays objectAtIndex:theCom.weekday];
+    return theCom.weekday;
+}
+
++ (NSDateComponents *)xfunc_dateComponentsFromDate:(NSDate *)date {
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierChinese];
+    //    NSDateComponents *components = [[NSDateComponents alloc] init];
+    NSInteger componentsUnit = NSCalendarUnitDay|NSCalendarUnitMonth|NSCalendarUnitYear|NSCalendarUnitWeekday|NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond;
+    NSDateComponents *components = [calendar components:componentsUnit fromDate:date];
+    return components;
+}
+
 
 #pragma mark - 根据一定高度/宽度返回宽度/高度
 /**
@@ -180,9 +223,7 @@
 + (int)getRandomNumber:(int)from to:(int)to
 
 {
-    
     return (int)(from + (arc4random() % (to - from + 1)));
-    
 }
 
 @end

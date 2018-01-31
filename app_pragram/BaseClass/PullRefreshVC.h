@@ -20,6 +20,13 @@
 
 @property (nonatomic,strong)UITableView *mytable;
 
+@property (nonatomic,strong)NSMutableArray *myDataSource;
+
+-(void)registerCellWithNib:(NSString *)nibName tableView:(UITableView *)tableView;
+
+-(void)registerCellWithClass:(NSString *)className tableView:(UITableView *)tableView;
+
+- (void)setStatusBarBackgroundColor:(UIColor *)color;
 //- (void)forbidPullRefresh;
 
 @end

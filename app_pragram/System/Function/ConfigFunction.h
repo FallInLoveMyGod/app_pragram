@@ -14,7 +14,9 @@
 
 + (BOOL)xfunc_emptyWithString:(NSString *)string;
 
-+ (NSDictionary *)dicFromLocalJsonWithFileName:(NSString *)fileName;
++ (NSDictionary *)xfunc_dicFromLocalJsonWithFileName:(NSString *)fileName;
+
++ (NSString *)xfunc_dictionaryToJSONString:(NSDictionary *)dictionary;
 
 + (BOOL)xfunc_isValidMobileNumber:(NSString *)mobileNum;
 
@@ -25,6 +27,13 @@
 + (NSString *)xfunc_getHourStringFromHour:(int)hour;
 
 + (NSString *)xfunc_getMiniteStringFromMinite:(int)minite;
+
++ (NSDate *)xfunc_dateFromtimeStrap:(NSInteger)timeStrap;
+
++ (NSInteger)xfunc_weekdayFromDate:(NSDate *)date;
+
++ (NSDateComponents *)xfunc_dateComponentsFromDate:(NSDate *)date;
+
 
 + (CGSize)xfunc_getStringSizeWith:(NSString *)goalString withStringFont:(CGFloat)font withWidthOrHeight:(CGFloat)fixedSize isWidthFixed:(BOOL)isWidth;
 

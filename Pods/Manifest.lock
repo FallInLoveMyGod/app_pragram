@@ -38,6 +38,9 @@ PODS:
   - SDWebImage/Core (4.0.0)
   - SVProgressHUD (2.1.2)
   - TYPagerController (2.0.6)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -58,6 +61,7 @@ DEPENDENCIES:
   - SDWebImage (~> 4.0.0)
   - SVProgressHUD (~> 2.1.2)
   - TYPagerController
+  - YYKit (~> 1.0.9)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -78,7 +82,8 @@ SPEC CHECKSUMS:
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   TYPagerController: 043c9063b53cc6d3f6eb937c9dcbf431ae7cad85
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: f15c01a6054cb82ef435e0c6a80787949ad1f8f3
+PODFILE CHECKSUM: 6270e2d2e03b038a80bd138ea185b348c43af988
 
 COCOAPODS: 1.4.0.beta.2

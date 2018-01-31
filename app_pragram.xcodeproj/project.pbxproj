@@ -30,6 +30,7 @@
 		FE1541C31FD4F0340053C6F9 /* SystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1541BE1FD4F0340053C6F9 /* SystemManager.m */; };
 		FE1541C41FD4F0340053C6F9 /* ConfigFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1541BF1FD4F0340053C6F9 /* ConfigFunction.m */; };
 		FE1541C51FD4F0340053C6F9 /* RequestFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = FE1541C01FD4F0340053C6F9 /* RequestFunction.m */; };
+		FE163C392019C38600A7C870 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE163C382019C38600A7C870 /* BaseNavigationController.m */; };
 		FE18FE911FF644F400528289 /* MyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FE18FE8F1FF644F400528289 /* MyTabBar.m */; };
 		FE55D2E21FFF1895006BA54C /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE55D2DC1FFF1895006BA54C /* CollectionViewCell.m */; };
 		FE55D2E31FFF1895006BA54C /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE55D2DD1FFF1895006BA54C /* CollectionViewCell.xib */; };
@@ -39,6 +40,9 @@
 		FEFB77491FF23175006C20DF /* NSObject+Model.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFB77481FF23174006C20DF /* NSObject+Model.m */; };
 		FEFB774F1FF24C8A006C20DF /* NSMutableArray+NilObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFB774E1FF24C8A006C20DF /* NSMutableArray+NilObject.m */; };
 		FEFB77521FF24D1B006C20DF /* NSMutableDictionary+NilObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFB77511FF24D1B006C20DF /* NSMutableDictionary+NilObject.m */; };
+		FEFB9FF42021C2310009E182 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFB9FF32021C2310009E182 /* BaseModel.m */; };
+		FEFB9FF72021CA7E0009E182 /* HWBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFB9FF52021CA7D0009E182 /* HWBaseAlertView.m */; };
+		FEFB9FFB2021CAC50009E182 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEFB9FFA2021CAC50009E182 /* ClockView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +98,8 @@
 		FE1541C01FD4F0340053C6F9 /* RequestFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestFunction.m; sourceTree = "<group>"; };
 		FE1541C11FD4F0340053C6F9 /* ConfigFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigFunction.h; sourceTree = "<group>"; };
 		FE1541C21FD4F0340053C6F9 /* SystemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemManager.h; sourceTree = "<group>"; };
+		FE163C372019C38600A7C870 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		FE163C382019C38600A7C870 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		FE18FE8F1FF644F400528289 /* MyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBar.m; sourceTree = "<group>"; };
 		FE18FE901FF644F400528289 /* MyTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBar.h; sourceTree = "<group>"; };
 		FE55D2DB1FFF1895006BA54C /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
@@ -110,6 +116,12 @@
 		FEFB774E1FF24C8A006C20DF /* NSMutableArray+NilObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+NilObject.m"; sourceTree = "<group>"; };
 		FEFB77501FF24D1B006C20DF /* NSMutableDictionary+NilObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+NilObject.h"; sourceTree = "<group>"; };
 		FEFB77511FF24D1B006C20DF /* NSMutableDictionary+NilObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+NilObject.m"; sourceTree = "<group>"; };
+		FEFB9FF22021C2310009E182 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		FEFB9FF32021C2310009E182 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		FEFB9FF52021CA7D0009E182 /* HWBaseAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWBaseAlertView.m; sourceTree = "<group>"; };
+		FEFB9FF62021CA7E0009E182 /* HWBaseAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWBaseAlertView.h; sourceTree = "<group>"; };
+		FEFB9FF92021CAC40009E182 /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
+		FEFB9FFA2021CAC50009E182 /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +266,7 @@
 		FE01E3FB1FD1484400BA1299 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				FEFB9FF82021CAA70009E182 /* Clock */,
 				FE18FE8E1FF6443100528289 /* MyTabBar */,
 				FE01E3FC1FD1484400BA1299 /* AlertView */,
 				FE01E3FF1FD1484400BA1299 /* GGBannerView */,
@@ -266,6 +279,8 @@
 			children = (
 				FE01E3FD1FD1484400BA1299 /* Alert.h */,
 				FE01E3FE1FD1484400BA1299 /* Alert.m */,
+				FEFB9FF62021CA7E0009E182 /* HWBaseAlertView.h */,
+				FEFB9FF52021CA7D0009E182 /* HWBaseAlertView.m */,
 			);
 			path = AlertView;
 			sourceTree = "<group>";
@@ -348,6 +363,10 @@
 				FE01E41B1FD1484500BA1299 /* PullRefreshVC.m */,
 				FE01E41C1FD1484500BA1299 /* RootVC.h */,
 				FE01E41D1FD1484500BA1299 /* RootVC.m */,
+				FE163C372019C38600A7C870 /* BaseNavigationController.h */,
+				FE163C382019C38600A7C870 /* BaseNavigationController.m */,
+				FEFB9FF22021C2310009E182 /* BaseModel.h */,
+				FEFB9FF32021C2310009E182 /* BaseModel.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -388,6 +407,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FEFB9FF82021CAA70009E182 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				FEFB9FF92021CAC40009E182 /* ClockView.h */,
+				FEFB9FFA2021CAC50009E182 /* ClockView.m */,
+			);
+			path = Clock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -528,7 +556,9 @@
 				FE55D2E41FFF1895006BA54C /* CustotNavView.m in Sources */,
 				FE01E4231FD1484500BA1299 /* GGBannerCollectionViewCell.m in Sources */,
 				FE1541C41FD4F0340053C6F9 /* ConfigFunction.m in Sources */,
+				FEFB9FFB2021CAC50009E182 /* ClockView.m in Sources */,
 				FE01E4291FD1484500BA1299 /* PersonalCenterVC.m in Sources */,
+				FE163C392019C38600A7C870 /* BaseNavigationController.m in Sources */,
 				FE18FE911FF644F400528289 /* MyTabBar.m in Sources */,
 				FE55D2E81FFF2461006BA54C /* HeaderReusableView.m in Sources */,
 				FE01E4211FD1484500BA1299 /* ACommunityVC.m in Sources */,
@@ -542,8 +572,10 @@
 				FE01E3D21FD1475D00BA1299 /* AppDelegate.m in Sources */,
 				FE01E4221FD1484500BA1299 /* Alert.m in Sources */,
 				FE01E4251FD1484500BA1299 /* AHomeVC.m in Sources */,
+				FEFB9FF42021C2310009E182 /* BaseModel.m in Sources */,
 				FEFB774F1FF24C8A006C20DF /* NSMutableArray+NilObject.m in Sources */,
 				FE1541C51FD4F0340053C6F9 /* RequestFunction.m in Sources */,
+				FEFB9FF72021CA7E0009E182 /* HWBaseAlertView.m in Sources */,
 				FE01E4241FD1484500BA1299 /* GGBannerView.m in Sources */,
 				FE01E42A1FD1484500BA1299 /* APurchaseVC.m in Sources */,
 				FE01E4271FD1484500BA1299 /* SecendController.m in Sources */,
